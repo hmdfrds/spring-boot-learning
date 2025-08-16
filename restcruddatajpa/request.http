@@ -1,0 +1,50 @@
+### getEmployees
+
+GET http://localhost:8080/api/employees HTTP/1.1
+
+
+### getEmployeeById
+
+GET http://localhost:8080/api/employees/1 HTTP/1.1
+
+
+### addEmployee
+
+POST http://localhost:8080/api/employees HTTP/1.1
+Content-Type: application/json
+
+{
+  "email": "hector@bruh.com",
+  "firstName": "Hector",
+  "lastName": "Perez"
+}
+
+
+### updateEmployee
+
+PUT http://localhost:8080/api/employees HTTP/1.1
+Content-Type: application/json
+
+{
+  "email": "time@lub2code.com",
+  "firstName": "Timothy",
+  "id": 1,
+  "lastName": "Patterson"
+}
+
+
+### patchEmployee
+
+PATCH http://localhost:8080/api/employees/1 HTTP/1.1
+Content-Type: application/json
+
+{
+  "email": "time@lub2code.com",
+  "firstName": "Timothys",
+  "lastName": "Patterson"
+}
+
+
+### deleteEmployee
+
+DELETE http://localhost:8080/api/employees/1 HTTP/1.1
